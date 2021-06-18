@@ -22,7 +22,7 @@ int sum(Node* node) {
 
 void push(Node* node, int value) {
     if (node->next == NULL) {
-        Node* new_node = malloc(sizeof(Node*));
+        Node* new_node = malloc(sizeof(Node));
         new_node->value = value;
         new_node->next = NULL;
         node->next = new_node;
